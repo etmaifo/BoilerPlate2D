@@ -1,0 +1,3 @@
+block_blue = 0 0 32 32
+block_green = 32 0 32 32
+block_red = 64 0 32 32

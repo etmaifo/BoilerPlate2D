@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="32" tilewidth="32" tileheight="32" nextobjectid="4">
+ <tileset firstgid="1" name="blocks" tilewidth="32" tileheight="32">
+  <image source="../img/blocks.png" trans="eeeddf" width="96" height="32"/>
+ </tileset>
+ <tileset firstgid="4" name="player" tilewidth="50" tileheight="61">
+  <image source="../img/player.png" trans="eeeddf" width="1200" height="61"/>
+ </tileset>
+ <layer name="Blocks" width="64" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt2MkKwCAMRdH4/z/dpSVkMCBtlHtAKu3TOq0UAYBehlM/xZA57uzp5b02Oqvf/W1l3tn6WHUrq+sdRHukc2J8y/bfy3QRzdPKVPc/Wi8AAAAAAICTdLjT+/p+scOc3zrer96K9c3tPIteH/rMW2XHv6v9Z5nquFfyt5cHHY0Asg==
+  </data>
+ </layer>
+ <objectgroup name="player">
+  <object id="3" gid="7" x="688" y="136" width="50" height="61"/>
+ </objectgroup>
+</map>
