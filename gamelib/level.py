@@ -1,12 +1,14 @@
-from levelparser import *
-from player import *
-from block import *
+import os
+import pygame
+from levelparser import LevelCreator
+from player import Player
+from block import Block
+from constants import BLOCK
 
-class Level:
+class Level(object):
     def __init__(self):
         self.level_blocks = []
         self.solid_blocks = []
-        self.block = [str(i) for i in range(1, 10)]
 
     def convertToSprite(self, x, y, grid_number):
         block = Block(x, y, BLOCK.width, BLOCK.height, grid_number)
@@ -14,7 +16,7 @@ class Level:
 
     def parse_level(self):
         for blockTile in self.level_blocks:
-            if (blockTile[2] > 0):
+            if blockTile[2] > 0:
                 block = self.convertToSprite(blockTile[0] * 32, blockTile[1] * 32, blockTile[2])
                 self.solid_blocks.append(block)
 

@@ -1,12 +1,12 @@
-from constants import *
-
+from constants import ASSETS, BLOCK
+import pygame
 
 class Block(pygame.sprite.Sprite):
-    def __init__(self, x, y, width=BLOCK.height, height=BLOCK.height, grid_number="5"):
+    def __init__(self, x, y, width=BLOCK.height, height=BLOCK.height, image=None):
         pygame.sprite.Sprite.__init__(self)
         self.assets = ASSETS.blocks
         self.image = self.assets.get_frame()
-        self.image = pygame.transform.smoothscale(self.image, (BLOCK.width, BLOCK.height))
+        self.image = pygame.transform.smoothscale(self.image, (width, height))
         # self.color = color
 
         self.rect = self.image.get_rect()

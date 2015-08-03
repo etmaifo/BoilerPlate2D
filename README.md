@@ -6,6 +6,10 @@ Python and Pygame base code for making 2D platformer games.
 Python 2.7 and Pygame.
 Pytmx for levels.
 
+## Controls
+A - Left, D - Right, I - Jump
+
+
 ## Screenshots 
 ![Screen1](screenshots/screen01.jpg) ![Screen2](screenshots/screen02.jpg) ![Screen3](screenshots/screen03.jpg)
 

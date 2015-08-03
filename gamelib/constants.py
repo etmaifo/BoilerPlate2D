@@ -1,4 +1,3 @@
-from random import *
 from assets import *
 from pygame import *
 
@@ -22,7 +21,7 @@ class FilesPath(object):
 FILES = FilesPath()
 
 # Screen dimensions
-class SCREEN:
+class SCREEN(object):
     width = 1024
     height = 576
 
@@ -30,17 +29,12 @@ class SCREEN:
 CAMERA_SLACK = 20
 
 # Block
-class BLOCK:
+class BLOCK(object):
     width = 32
     height = 32
 
-
-number = randrange(8)
-BLOCK_IMG = "img/block%d.png" %number
-
-
 # Player
-class PLAYER:
+class PLAYER(object):
     width = 40
     height = 49
     speed = 8
@@ -48,9 +42,9 @@ class PLAYER:
 
 
 # World
-class WORLD:
+class WORLD(object):
     gravity = 1
 
-class ASSETS:
+class ASSETS(object):
     player = PlayerAsset(os.path.join("img", "player.png"), os.path.join("img", "player.txt"))
     blocks = BlockAssets(os.path.join("img", "blocks.png"), os.path.join("img", "blocks.txt"))

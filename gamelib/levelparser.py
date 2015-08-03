@@ -22,5 +22,5 @@ class LevelCreator(object):
             if layer.name.upper() == "PLAYER":
                 self.players = layer
                 self.lifts = layer
-            elif layer.name == "Blocks":
+            elif layer.name.upper() == "BLOCKS":
                 self.blocks = layer

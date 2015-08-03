@@ -1,4 +1,7 @@
-from worldobject import *
+import pygame
+from pygame import *
+from constants import PLAYER, ASSETS, WORLD
+from worldobject import Movable
 try:
     import pygame.mixer as mixer
 except:

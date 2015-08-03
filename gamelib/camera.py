@@ -1,6 +1,6 @@
 import pygame
 
-class Camera:
+class Camera(object):
     def __init__(self, camera_rect, width, height):
         self.camera_func = camera_rect
         self.rect = pygame.Rect(0, 0, width, height)
