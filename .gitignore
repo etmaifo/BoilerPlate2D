@@ -44,3 +44,6 @@ Temporary Items
 
 # Python
 *.pyc
+
+# Pycharm Project Files
+.idea/
